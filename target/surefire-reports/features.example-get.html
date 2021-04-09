@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>features.example-get</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">0</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">1</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2021-03-04 03:00:09 pm</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item failed">
+                        <a href="#[1:5]">[1:5] list all users having name John </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">features/example-get.feature</span><span class="feature-description">get call from gorest api</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:5]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:5]</span><span class="scenario-name">list all users having name John </span>
+                        </div>
+                        <div class="scenario-time failed">ms: 1248</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:5]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:5]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'https://gorest.co.in/'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">15:00:07.748 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row" data-parent="[1:5]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* header Authorization = 'Bearer _FWTKt73f0EeVrfWj7d3sKoLMnw_9dqVcs0k'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">Given path '/public-api/users'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">And param first_name = 'Tom'</div>
+                        </div>
+                        <div class="time-cell passed">12</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">And param status = 'active'</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">1142</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">15:00:07.798 request:
+1 &gt; GET https://gorest.co.in/public-api/users?first_name=Tom&amp;status=active
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer _FWTKt73f0EeVrfWj7d3sKoLMnw_9dqVcs0k
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14)
+
+15:00:08.929 response time in milliseconds: 1123.81
+1 &lt; 200
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 04 Mar 2021 14:00:08 GMT
+1 &lt; ETag: W/"a96c7806232cac624d2963c537d8f3c5"
+1 &lt; Expect-CT: enforce; max-age=3600
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: nginx
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: [Accept-Encoding, Origin]
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: [SAMEORIGIN, sameorigin]
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Request-Id: a66aeba0-7585-49fd-b314-326301b460a6
+1 &lt; X-Runtime: 0.017564
+1 &lt; X-XSS-Protection: 1; mode=block
+{"code":200,"meta":{"pagination":{"total":1005,"pages":51,"page":1,"limit":20}},"data":[{"id":11,"name":"Let&iacute;zia","email":"tiesha@example.net","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:03.864+05:30","updated_at":"2021-03-04T18:23:37.157+05:30"},{"id":14,"name":"Allasani Peddana","email":"allasani.peddana123@15ce.com","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:03.927+05:30","updated_at":"2021-03-04T18:10:29.469+05:30"},{"id":17,"name":"Advaya Bandopadhyay","email":"bandopadhyay_advaya@blanda.name","gender":"Male","status":"Active","created_at":"2021-03-04T03:50:03.990+05:30","updated_at":"2021-03-04T03:50:03.990+05:30"},{"id":18,"name":"Girija Guneta","email":"girija_guneta@deckow.co","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:04.002+05:30","updated_at":"2021-03-04T03:50:04.002+05:30"},{"id":20,"name":"Aditeya Guneta Esq.","email":"esq_aditeya_guneta@nitzsche-pfannerstill.com","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:04.049+05:30","updated_at":"2021-03-04T03:50:04.049+05:30"},{"id":21,"name":"Gopee Mehrotra","email":"mehrotra_gopee@oreilly-crooks.co","gender":"Male","status":"Active","created_at":"2021-03-04T03:50:04.059+05:30","updated_at":"2021-03-04T03:50:04.059+05:30"},{"id":23,"name":"Narendra Nayar","email":"nayar_narendra@schaden-fritsch.info","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:04.074+05:30","updated_at":"2021-03-04T03:50:04.074+05:30"},{"id":24,"name":"Surya Mahajan JD","email":"surya_jd_mahajan@toy.info","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:04.082+05:30","updated_at":"2021-03-04T03:50:04.082+05:30"},{"id":25,"name":"Meghnath Dubashi","email":"meghnath_dubashi@kautzer-ankunding.net","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:04.090+05:30","updated_at":"2021-03-04T03:50:04.090+05:30"},{"id":26,"name":"Washington Luis Cabral da Silva","email":"wluissilva@live.com","gender":"Male","status":"Active","created_at":"2021-03-04T03:50:04.106+05:30","updated_at":"2021-03-04T08:37:54.223+05:30"},{"id":31,"name":"Sushma Menon","email":"sushma_menon@bashirian-connelly.biz","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:04.155+05:30","updated_at":"2021-03-04T03:50:04.155+05:30"},{"id":32,"name":"Hiranya Devar IV","email":"devar_hiranya_iv@abshire-boyer.name","gender":"Male","status":"Active","created_at":"2021-03-04T03:50:04.158+05:30","updated_at":"2021-03-04T03:50:04.158+05:30"},{"id":33,"name":"Diksha Kaul","email":"diksha_kaul@kuhn-anderson.net","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:04.183+05:30","updated_at":"2021-03-04T03:50:04.183+05:30"},{"id":35,"name":"Dharitri Varrier Esq.","email":"varrier_esq_dharitri@gleichner-goyette.com","gender":"Male","status":"Active","created_at":"2021-03-04T03:50:04.217+05:30","updated_at":"2021-03-04T03:50:04.217+05:30"},{"id":37,"name":"Hari Deshpande DC","email":"deshpande_hari_dc@kilback.name","gender":"Male","status":"Active","created_at":"2021-03-04T03:50:04.231+05:30","updated_at":"2021-03-04T03:50:04.231+05:30"},{"id":39,"name":"Upendra Guneta","email":"guneta_upendra@ernser.co","gender":"Male","status":"Active","created_at":"2021-03-04T03:50:04.260+05:30","updated_at":"2021-03-04T03:50:04.260+05:30"},{"id":40,"name":"Lauren McGlynn","email":"Michelle42@hotmail.com","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:04.274+05:30","updated_at":"2021-03-04T08:37:50.986+05:30"},{"id":49,"name":"Akroor Deshpande","email":"akroor_deshpande@mcclure.co","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:04.429+05:30","updated_at":"2021-03-04T03:50:04.429+05:30"},{"id":50,"name":"Trilokesh Malik","email":"trilokesh_malik@swaniawski.net","gender":"Male","status":"Active","created_at":"2021-03-04T03:50:04.446+05:30","updated_at":"2021-03-04T03:50:04.446+05:30"},{"id":53,"name":"Lakshminath Nayar DVM","email":"nayar_lakshminath_dvm@rolfson.org","gender":"Female","status":"Active","created_at":"2021-03-04T03:50:04.519+05:30","updated_at":"2021-03-04T03:50:04.519+05:30"}]}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">And def userResponse = response</div>
+                        </div>
+                        <div class="time-cell passed">17</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref failed">9</div>
+                            <div class="step-cell failed">Then match userResponse.result[*].first_name contains ["Tom"]</div>
+                        </div>
+                        <div class="time-cell failed">51</div>
+                    </div>
+                    <div class="preformatted" data-parent="9">15:00:09.009 assertion failed: path: $.result[*].first_name, actual: null, expected: com.jayway.jsonpath.internal.JsonContext@69c43e48, reason: actual json-path does not exist
+example-get.feature:12 - path: $.result[*].first_name, actual: null, expected: com.jayway.jsonpath.internal.JsonContext@69c43e48, reason: actual json-path does not exist</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
